@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var bpm:Long=120
+        var bpm:Long=60
         var time:Double= (bpm/60).toDouble()
-        var mp:MediaPlayer = MediaPlayer.create(this,R.raw.beep1)
-        var mp2:MediaPlayer=MediaPlayer.create(this,R.raw.beep2)
+        var mp:MediaPlayer = MediaPlayer.create(this,R.raw.bar1)
+        var mp2:MediaPlayer=MediaPlayer.create(this,R.raw.beat3)
         var comp:Int=0
 
         val runnable = object : Runnable {
